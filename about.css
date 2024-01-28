@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 45px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background: goldenrod;
+}
+
+.heading p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.picture {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s ease;
+}
+
+.picture img:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: black;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.read {
+    display: inline-block;
+    padding: 10px 20px;
+    color: grey;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: .5s ease;
+    border-radius: 25px;
+}
+
+.read:hover {
+    background-color: green;
+    color: burlywood;
+}
+
+@media screen and (max-width: 700px){
+    .heading {
+        padding: 0px 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .picture {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .content p {
+        padding: 0px;
+        font-size: 16px;
+    }
+    .read {
+        font-size: 16px;
+    }
+}
